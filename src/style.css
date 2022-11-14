@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #23252C;
+  color: white;
+  font-weight: 400;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 44px;
+  margin-bottom: 44px;
+  width: 317px;
+  height: 780px;
+  background-color: #1A1B21;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container .info {
+  position: relative;
+}
+
+.container .user--name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 21px;
+  margin-bottom: 0px;
+}
+
+.container .user--prof {
+  margin: 6px 70px 0px 70px;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #F3BF99;
+}
+
+.container .user--site {
+  margin: 9px 44px 15px 45px;
+  font-size: 10.24px;
+  line-height: 15px;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 33px;
+}
+
+.container .buttons button {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  width: 115px;
+  height: 34px;
+}
+
+.container .buttons button.email {
+  left: 151px;
+  top: 468px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+}
+
+.container .buttons button.linkedin {
+  left: 283px;
+  top: 468px;
+  background: #5093E2;
+  border: none;
+  color: white;
+}
+
+.container .buttons button.email::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+  background: url("/images/Mail.png") no-repeat;
+}
+
+.container .buttons button.linkedin::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+  background: url("/images/linkedin.png") no-repeat;
+}
+
+.container .about, .container .interests {
+  margin: 0px 34px 24px 34px;
+  padding: auto;
+}
+
+.container .about h2, .container .interests h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 5px;
+}
+
+.container .about p, .container .interests p {
+  margin: 0;
+  max-width: 247px;
+  font-size: 11px;
+  line-height: 15.36px;
+  color: #DCDCDC;
+}
+
+.container .interests > p {
+  margin-bottom: 44px;
+}
+
+.container .social-media {
+  background-color: #161619;
+  height: 64px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 0px 0px 10px 10px;
+}
